@@ -11,3 +11,4 @@ def index():
     return {"message": "Hello world"}
 
 print('hello world')
+print("Hello world")

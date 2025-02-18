@@ -15,6 +15,5 @@ def max_ascending_sum(nums: List[int]) -> int:
 
 
 nums = [10,20,30,5,10,50]
-print("Hello world!")
 
 max_ascending_sum(nums)

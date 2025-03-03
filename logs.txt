@@ -1,1 +1,1 @@
-MyAPI: Call to get_all_products
+MyAPI: Template read for product with id 3

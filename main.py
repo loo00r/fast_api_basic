@@ -2,7 +2,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse, PlainTextResponse, HTMLResponse
 from fastapi.exceptions import HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from router import blog_get, blog_post, user, article, product, file
+from router import blog_get, blog_post, user, article, product, file, dependencies
 from auth import authentication
 from templates import templates
 import sqlalchemy
@@ -17,6 +17,7 @@ from fastapi.websockets import WebSocket
 
 
 app = FastAPI()
+app.include_router(dependencies.router)
 app.include_router(templates.router)
 app.include_router(authentication.router)
 app.include_router(file.router)
